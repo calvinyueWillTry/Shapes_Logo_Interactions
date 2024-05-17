@@ -1,4 +1,13 @@
 Shapeshift Summary (see video in place of screenshots)
+
+Video:
+First minute is showing all the code.
+1:03 run "node index.js", which trigger the sequence of inquiries, starting with color.
+1:10 the next inquiry, which is shape;
+1:22 if it's more than 3 characters, it will trigger line 64 in index.js, and have me start the process over.
+1:38 when clicking on the shape name under output, it will show my newly produced shape with logo. I can open with a live server to see the result. 
+1:58 I repeat the process for the other shapes, to demonstrate full MVP.
+
 First called require('inquirer') and the shape classes (from shapes.js in lib folder);
 SVG:
 
@@ -15,7 +24,7 @@ Depending on the shape chosen, if (shapeSelect.shape == "Triangle", "Rectangle" 
 
 Then takes this variable containing the class, and shapeCircle.render(colorSelect.color, logoInput.logo); these make the shape that color, and adds the logo within.
 
-Shapes: 
+Shapes (called in index.js as classes that are imported: 
 In the shapes.js, require('node:fs') and require('path') at the top of the page (made fs and join respectively);
 
 3 shapes have 3 different classes (color, text as parameters), with the constructor implicitly added by JS.
